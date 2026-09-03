@@ -2,6 +2,13 @@
 
 These are structural wireframes, not final visual mockups. They define hierarchy, content order, and relationships before styling.
 
+## Layout rules
+
+- **Desktop landing:** use generous editorial margins and an asymmetric hero. The headline and product promise need a calm reading column while the Reconciliation Line has its own visual field; do not compress the line to fit extra copy.
+- **Desktop case:** use a two-column evidence composition, with the decision brief visible without scrolling while source evidence and policy remain adjacent and readable.
+- **Mobile:** do not shrink desktop diagrams or tables. Recompose the Reconciliation Line into a vertical source sequence with a clearly labeled redline moment. Preserve 20–24px side padding, 16px minimum control gaps, readable body text, and a decision path that never requires horizontal scrolling.
+- **Technical metadata:** IDs, UUIDs, timestamps, and retrieval details are secondary rows or disclosures. They must not determine the page’s primary scale.
+
 ## Landing page — desktop
 
 ```text

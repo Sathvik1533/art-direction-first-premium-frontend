@@ -14,6 +14,7 @@ Read these files before editing:
 - references/qa-checklist.md
 - docs/DESIRED_OUTCOME_VERIFICATION.md
 - docs/VISUAL_CONCEPT_SCORECARD.md
+- references/ui-library-integration.md
 
 Read the current repository and inspect the existing routes, data states, backend/API boundaries, and real functionality. Do not modify backend code, API endpoints, database schemas, or server logic.
 
@@ -60,6 +61,14 @@ Use:
 - Blue only when it represents a defined source or system meaning.
 
 Do not use random gradients, heavy glassmorphism, unrelated 3D, terminal decoration, excessive pills, or tiny uppercase labels as a substitute for art direction.
+
+## UI and motion library policy
+
+Do not treat a library as the source of LedgerLens identity. Build the Reconciliation Line, evidence surfaces, typography, palette, and spacing first.
+
+Use the existing project UI primitives for accessible controls. Consider React Bits only for one small expressive moment, Aceternity UI or Skiper UI only as heavily adapted implementation references for an uncommon hero or section, Framer Motion/Motion for state and layout transitions, and Motion Primitives for small composable presence, disclosure, or sequential transitions. Vengeance UI may be considered for one restrained interaction only. Do not acquire or import all libraries by default.
+
+For every borrowed component, record: product reason, page fit, brand adaptation, keyboard and reduced-motion behavior, performance cost, license, and fallback. Reject any component that introduces neon gradients, generic glass cards, decorative motion, or a second visual language. The Reconciliation Line must be built or adapted as a LedgerLens-owned signature, not copied from a library.
 
 ## Phase 1 scope
 
