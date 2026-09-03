@@ -4,7 +4,7 @@ Use this handoff with any agentic AI frontend builder, including Antigravity, Cl
 
 ## Instructions to the receiving agent
 
-Use the attached `SKILL.md` as the governing art-direction workflow. Use the project brief as the source of project truth. Use the reference analysis as the boundary for what to study and what not to copy. Use the design-system template after a visual concept is selected. Use the QA checklist for final evidence.
+Use the attached `SKILL.md` as the governing art-direction workflow. Use the project brief as the source of project truth. Use the reference analysis as the boundary for what to study and what not to copy. Use the design-system template after a visual concept is selected. Use the QA checklist for final evidence. Use `docs/DESIRED_OUTCOME_VERIFICATION.md` to verify the owner actually received the intended frontend/UI/UX. Use `docs/MANUS_CONTINUITY_HANDOFF.md` when transferring the work to another Manus account.
 
 The workflow is tool-agnostic. If your environment does not support a particular tool, perform the equivalent action available in your environment and document the limitation. Do not skip a phase merely because the tool name differs.
 
@@ -22,7 +22,8 @@ The workflow is tool-agnostic. If your environment does not support a particular
 10. Review screenshots and revise before full propagation.
 11. Apply the approved system to the remaining routes by page responsibility.
 12. Run visual, functional, responsive, accessibility, and persistence QA.
-13. Return the preview URL, screenshots, evidence matrix, known limitations, and changed files.
+13. Verify the owner’s desired outcome and record the status as aligned, conditional, unverified, or rejected.
+14. Return the preview URL, screenshots, evidence matrix, known limitations, desired-outcome status, and changed files.
 
 ## Project inputs
 

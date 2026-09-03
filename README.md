@@ -12,6 +12,12 @@ AI frontend agents often jump from a feature list directly to familiar cards, pi
 
 This system changes the order of operations. It starts with product truth, emotional premise, and brand point of view. It treats reference websites as principles rather than templates. It requires multiple visual concepts, screenshot-based rejection of generic output, a project-specific design system, a two-surface proof, and independent visual and functional QA before full propagation.
 
+## Origin and mission
+
+This system came from a practical problem: a working product can lose its momentum when the frontend repeatedly comes back looking like a generic AI-generated website. The cost is not only visual frustration. It creates rework, weakens confidence in the product, makes the owner question the project, and makes every new hackathon start from the same painful reset.
+
+Art Direction First is a personal solution turned into a reusable public method. It reduces that stress for other builders by moving the difficult design decisions earlier, making them visible, and testing them before a full frontend is built. The system does not promise that every result will be beautiful. It gives people and agents a disciplined way to discover the right visual world faster, reject the wrong one earlier, preserve the real workflow, and carry the decision into the rest of the product.
+
 ## The workflow
 
 1. Give the agent `SKILL.md` and `templates/agent-handoff.template.md`.
@@ -63,6 +69,8 @@ The project owner may specify editorial, tactile, cinematic, utilitarian, spatia
 | `docs/HACKATHON_QUICKSTART.md` | Time-boxed execution plan for a 4–8 hour sprint |
 | `docs/HACKATHON_PRESENTATION_SCRIPT.md` | Script for explaining the system to a team or judges |
 | `docs/LEDGERLENS_LANDING_REVIEW.md` | Example of a project-specific directional review |
+| `docs/DESIRED_OUTCOME_VERIFICATION.md` | Owner/reviewer gate for confirming the intended frontend was achieved |
+| `docs/MANUS_CONTINUITY_HANDOFF.md` | Essential state for transferring work to another Manus account |
 | `CONTRIBUTING.md` | Contribution and maintenance guidelines |
 | `NOTICE.md` | Scope, responsibility, and third-party reference notice |
 | `LICENSE` | MIT License |
@@ -84,6 +92,14 @@ Keep the project-specific files in the project repository. The reusable skill re
 Give the agent the repository, the relevant report, and the universal handoff template. Then state the report’s authority and the expected action explicitly. For example: “Read `docs/LEDGERLENS_LANDING_REVIEW.md` as a directional product and UX review. Treat its findings as constraints for the next landing-page pass. Do not touch production code until you have summarized the issues, proposed the revised story and palette, and identified the screenshots required for comparison.”
 
 For a general project, pass a report using this structure: identify the report path, say whether it is diagnostic, visual, functional, or acceptance evidence, list which findings are binding, specify what the agent may change, require it to preserve backend and data behavior, and require it to return screenshots plus verified and unverified checks. The report is an input to the workflow; it does not replace the project brief or the visual concept gate.
+
+### How to verify the user got the desired frontend
+
+Do not let the implementing agent approve itself. Show the project owner or designated reviewer the three concepts, selected direction, final entry surface, real workflow, desktop/mobile screenshots, and important states. Ask whether the result feels like the intended product, whether the story arrives before technical language, whether the palette and UI direction are right, whether the landing and product feel like one world, and what still feels generic or wrong. Record the answer using [`docs/DESIRED_OUTCOME_VERIFICATION.md`](docs/DESIRED_OUTCOME_VERIFICATION.md). If the owner has not reviewed it, use `UNVERIFIED — awaiting review`, not PASS.
+
+### Manus account continuity
+
+If the account reaches a limit, transfer [`docs/MANUS_CONTINUITY_HANDOFF.md`](docs/MANUS_CONTINUITY_HANDOFF.md) as the durable context. It contains only the essential current state, decisions, links, blockers, next actions, and source-of-truth documents. Do not mix in old duplicated prompts or obsolete review archives.
 
 ## What this repository does not promise
 

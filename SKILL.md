@@ -84,6 +84,10 @@ Test the live result, not only the source code. Use `references/qa-checklist.md`
 
 Do not claim complete or PASS when a route is blank, a state is unverified, or a claim is unsupported. Return a stable preview URL, screenshots, known limitations, and a route-by-route evidence matrix.
 
+### Phase 7 — Desired-outcome verification
+
+Verify with the project owner or designated reviewer that the result is the frontend and UI/UX they intended—not merely the result the agent can defend. Show the concept screenshots, final landing/entry surface, real workflow, desktop/mobile proof, and relevant states. Ask whether the product story, visual world, UI direction, palette, typography, metaphor, marketing/product relationship, and interaction quality match the intended outcome. Record the response using `docs/DESIRED_OUTCOME_VERIFICATION.md`. Use `PASS — owner aligned`, `PASS — reviewer aligned`, `CONDITIONAL — changes requested`, `UNVERIFIED — awaiting review`, or `FAIL — direction rejected`; never assume approval.
+
 ## Rapid hackathon mode
 
 For a 4–8 hour sprint, time-box rather than remove the workflow. Spend approximately 15 minutes on diagnosis and inputs, 20 minutes on the visual concept decision, 60–90 minutes on the landing/entry surface and one real workflow, 90–180 minutes on propagation, and 30–45 minutes on evidence-based QA. If time runs out, ship the two-surface proof and clearly mark lower-priority routes unverified; do not pretend that unfinished routes passed.
@@ -102,4 +106,4 @@ Give the receiving agent this skill, `templates/agent-handoff.template.md`, a co
 
 Tell the agent: **Do not skip the concept gate, do not redesign every route before the two-surface proof, and do not treat a font/color change as art direction.**
 
-When passing a review report, identify its path, classify it as diagnostic, visual, functional, or acceptance evidence, state which findings are binding, define the allowed change scope, require preservation of backend/data behavior, and require screenshots plus verified and unverified checks in the response.
+When passing a review report, identify its path, classify it as diagnostic, visual, functional, or acceptance evidence, state which findings are binding, define the allowed change scope, require preservation of backend/data behavior, and require screenshots plus verified and unverified checks in the response. For continuity across Manus accounts, include `docs/MANUS_CONTINUITY_HANDOFF.md` and transfer only the essential current state, links, decisions, blockers, next actions, and source-of-truth documents; do not transfer outdated duplicate prompts.
