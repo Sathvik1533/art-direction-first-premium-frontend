@@ -26,6 +26,8 @@ This system changes the order of operations. It starts with product truth, emoti
 10. Apply the locked system to the remaining routes by page responsibility.
 11. Run `references/qa-checklist.md` and return evidence, limitations, screenshots, and a stable preview URL.
 
+For a time-boxed hackathon, use [`docs/HACKATHON_QUICKSTART.md`](docs/HACKATHON_QUICKSTART.md). It compresses the process into diagnosis, a focused concept gate, two-surface proof, propagation, and evidence-based QA without removing the quality gates.
+
 ## Three mandatory protections
 
 ### Avoid the AI slope
@@ -58,6 +60,9 @@ The project owner may specify editorial, tactile, cinematic, utilitarian, spatia
 | `references/qa-checklist.md` | Visual, functional, responsive, and accessibility QA |
 | `docs/CROSS_AGENT_ADAPTER.md` | Equivalent steps when an agent lacks a specific tool |
 | `docs/VISUAL_CONCEPT_SCORECARD.md` | Evidence-based concept comparison and rejection rubric |
+| `docs/HACKATHON_QUICKSTART.md` | Time-boxed execution plan for a 4–8 hour sprint |
+| `docs/HACKATHON_PRESENTATION_SCRIPT.md` | Script for explaining the system to a team or judges |
+| `docs/LEDGERLENS_LANDING_REVIEW.md` | Example of a project-specific directional review |
 | `CONTRIBUTING.md` | Contribution and maintenance guidelines |
 | `NOTICE.md` | Scope, responsibility, and third-party reference notice |
 | `LICENSE` | MIT License |
@@ -73,6 +78,12 @@ Give the agent the repository or the contents of `SKILL.md` and `templates/agent
 For a quick project, provide `SKILL.md`, the universal handoff template, and a completed project brief. For a serious production or hackathon project, also provide the asset/icon brief, reference analysis, and the concept scorecard. For a constrained agent, provide the cross-agent adapter so missing browser, image, repository, or backend capabilities become explicit equivalent steps rather than silent omissions.
 
 Keep the project-specific files in the project repository. The reusable skill remains stable; the project’s `DESIGN.md`, selected concept, references, screenshots, and acceptance evidence belong to that project. This separation lets the same workflow support very different products without carrying LedgerLens-specific decisions into unrelated work.
+
+### How to pass a review report to an AI agent
+
+Give the agent the repository, the relevant report, and the universal handoff template. Then state the report’s authority and the expected action explicitly. For example: “Read `docs/LEDGERLENS_LANDING_REVIEW.md` as a directional product and UX review. Treat its findings as constraints for the next landing-page pass. Do not touch production code until you have summarized the issues, proposed the revised story and palette, and identified the screenshots required for comparison.”
+
+For a general project, pass a report using this structure: identify the report path, say whether it is diagnostic, visual, functional, or acceptance evidence, list which findings are binding, specify what the agent may change, require it to preserve backend and data behavior, and require it to return screenshots plus verified and unverified checks. The report is an input to the workflow; it does not replace the project brief or the visual concept gate.
 
 ## What this repository does not promise
 

@@ -84,6 +84,12 @@ Test the live result, not only the source code. Use `references/qa-checklist.md`
 
 Do not claim complete or PASS when a route is blank, a state is unverified, or a claim is unsupported. Return a stable preview URL, screenshots, known limitations, and a route-by-route evidence matrix.
 
+## Rapid hackathon mode
+
+For a 4–8 hour sprint, time-box rather than remove the workflow. Spend approximately 15 minutes on diagnosis and inputs, 20 minutes on the visual concept decision, 60–90 minutes on the landing/entry surface and one real workflow, 90–180 minutes on propagation, and 30–45 minutes on evidence-based QA. If time runs out, ship the two-surface proof and clearly mark lower-priority routes unverified; do not pretend that unfinished routes passed.
+
+Use `docs/HACKATHON_QUICKSTART.md` for the sprint sequence. The rapid path is optimized for fewer wrong turns, not for skipping product truth, concept comparison, screenshot review, accessibility, or functional honesty.
+
 ## Anti-AI-slope guardrails
 
 Reject or revise output that relies on repeated rounded cards, excessive pills, default dark SaaS styling, neon gradients, generic dashboard tiles, tiny uppercase labels, monospace texture, decorative terminal logs, meaningless charts, stock imagery, AI/LLM language as personality, fake testimonials, unsupported metrics, or empty screens.
@@ -95,3 +101,5 @@ A project may use any of these intentionally, but only with a documented product
 Give the receiving agent this skill, `templates/agent-handoff.template.md`, a completed project brief using `templates/project-brief.template.md`, reference analysis using `references/reference-analysis.md` or equivalent, existing project constraints and routes, asset/icon/font preferences, and the required visual concept gate and QA checklist.
 
 Tell the agent: **Do not skip the concept gate, do not redesign every route before the two-surface proof, and do not treat a font/color change as art direction.**
+
+When passing a review report, identify its path, classify it as diagnostic, visual, functional, or acceptance evidence, state which findings are binding, define the allowed change scope, require preservation of backend/data behavior, and require screenshots plus verified and unverified checks in the response.
