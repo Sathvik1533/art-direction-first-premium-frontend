@@ -28,6 +28,7 @@ New to the workflow? Read the [integration tutorial](docs/INTEGRATION_TUTORIAL.m
 This is intentionally vertical so it remains readable on GitHub, mobile screens, and zoomed views.
 
 ```mermaid
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif", "fontSize": "17px", "lineColor": "#64748b", "primaryTextColor": "#111827"}}}%%
 flowchart TD
     A[01 · UNDERSTAND<br/>Product truth + user + workflow] --> B[02 · DEFINE<br/>Emotional premise + point of view]
     B --> C[03 · DIRECT<br/>Original visual world + UI direction]
