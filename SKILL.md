@@ -5,7 +5,7 @@ description: Agent-agnostic art direction and premium frontend workflow. Use whe
 
 # Art Direction First — Premium Frontend System
 
-Use this skill to prevent generic AI frontend output. It is designed to be handed to any capable AI agent—Antigravity, Claude Code, Gemini, Cursor, or another builder—alongside a project brief and reference links. It does not prescribe one aesthetic. It makes the process reusable while keeping every project’s identity original.
+Use this skill to prevent generic AI frontend output. It is designed to be handed to any capable agentic AI—Antigravity, Claude Code, Gemini, Kiro, Cursor, Windsurf, OpenAI coding agents, or another builder—alongside a project brief and reference links. The workflow is tool-agnostic: when one agent lacks a tool, perform the equivalent action available in that environment and document the limitation. It does not prescribe one aesthetic. It makes the process reusable while keeping every project’s identity original.
 
 ## Non-negotiable inputs
 
@@ -92,6 +92,6 @@ A project may use any of these intentionally, but only with a documented product
 
 ## Handoff format to another AI agent
 
-Give the receiving agent this skill, a completed project brief using `templates/project-brief.template.md`, reference analysis using `references/reference-analysis.md` or equivalent, existing project constraints and routes, asset/icon/font preferences, and the required visual concept gate and QA checklist.
+Give the receiving agent this skill, `templates/agent-handoff.template.md`, a completed project brief using `templates/project-brief.template.md`, reference analysis using `references/reference-analysis.md` or equivalent, existing project constraints and routes, asset/icon/font preferences, and the required visual concept gate and QA checklist.
 
 Tell the agent: **Do not skip the concept gate, do not redesign every route before the two-surface proof, and do not treat a font/color change as art direction.**

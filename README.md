@@ -14,7 +14,7 @@ This system changes the order of operations. It starts with product truth, emoti
 
 ## The workflow
 
-1. Give the agent `SKILL.md`.
+1. Give the agent `SKILL.md` and `templates/agent-handoff.template.md`.
 2. Fill `templates/project-brief.template.md` with product truth, users, workflow, constraints, references, UI direction, assets, icons, fonts, and quality bar.
 3. Analyze three to seven references using `references/reference-analysis.md`.
 4. Define a project-specific emotional premise, visual world, distinct voice, signature metaphor, material language, and anti-pattern list.
@@ -49,6 +49,7 @@ The project owner may specify editorial, tactile, cinematic, utilitarian, spatia
 | Path | Purpose |
 |---|---|
 | `SKILL.md` | Core agent instructions and mandatory workflow |
+| `templates/agent-handoff.template.md` | Universal handoff for any agentic AI tool |
 | `templates/project-brief.template.md` | Project-specific inputs supplied by the user or team |
 | `templates/design-system.template.md` | Project-specific system created after concept selection |
 | `references/reference-analysis.md` | Reference research and anti-copy method |
@@ -60,7 +61,7 @@ The project owner may specify editorial, tactile, cinematic, utilitarian, spatia
 
 ## How to use it with an AI agent
 
-Give the agent the repository or the contents of `SKILL.md`, then provide a completed project brief. Say:
+Give the agent the repository or the contents of `SKILL.md` and `templates/agent-handoff.template.md`, then provide a completed project brief. Say:
 
 > Use this repository as the art-direction and premium frontend workflow for this project. Follow the phases in order. Do not skip product diagnosis, reference analysis, the three-concept visual gate, or the two-surface proof. Do not treat a font/color change as art direction. Do not copy reference websites. Create one original visual world for this project, document it in `DESIGN.md`, prove it on one entry surface and one real workflow, then propagate it and perform independent visual, functional, responsive, and accessibility QA.
 
