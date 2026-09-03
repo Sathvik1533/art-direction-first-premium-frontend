@@ -19,7 +19,7 @@ Require the project owner or agent to provide these before implementation:
 
 If inputs are missing, infer only low-risk details and explicitly record assumptions. Do not invent product claims, testimonials, benchmarks, assets, or brand history.
 
-Use `templates/project-brief.template.md` to collect inputs. Read `references/reference-analysis.md` when evaluating references, `references/ui-library-integration.md` when considering animation/component libraries, and `templates/design-system.template.md` when locking the selected direction.
+Use `templates/project-brief.template.md` to collect inputs. Read `templates/agent-handoff.template.md` for the universal handoff, `templates/asset-and-icon-brief.template.md` for project assets and motion, `references/reference-analysis.md` when evaluating references, `references/ui-library-integration.md` when considering animation/component libraries, and `templates/design-system.template.md` when locking the selected direction. Use `docs/CROSS_AGENT_ADAPTER.md` when the chosen agent lacks a particular tool and `docs/VISUAL_CONCEPT_SCORECARD.md` when comparing concepts.
 
 ## Core principle
 

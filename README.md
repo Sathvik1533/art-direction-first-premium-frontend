@@ -50,11 +50,14 @@ The project owner may specify editorial, tactile, cinematic, utilitarian, spatia
 |---|---|
 | `SKILL.md` | Core agent instructions and mandatory workflow |
 | `templates/agent-handoff.template.md` | Universal handoff for any agentic AI tool |
+| `templates/asset-and-icon-brief.template.md` | Project-specific assets, icons, fonts, and motion brief |
 | `templates/project-brief.template.md` | Project-specific inputs supplied by the user or team |
 | `templates/design-system.template.md` | Project-specific system created after concept selection |
 | `references/reference-analysis.md` | Reference research and anti-copy method |
 | `references/ui-library-integration.md` | Safe use of animation/component libraries |
 | `references/qa-checklist.md` | Visual, functional, responsive, and accessibility QA |
+| `docs/CROSS_AGENT_ADAPTER.md` | Equivalent steps when an agent lacks a specific tool |
+| `docs/VISUAL_CONCEPT_SCORECARD.md` | Evidence-based concept comparison and rejection rubric |
 | `CONTRIBUTING.md` | Contribution and maintenance guidelines |
 | `NOTICE.md` | Scope, responsibility, and third-party reference notice |
 | `LICENSE` | MIT License |
@@ -64,6 +67,12 @@ The project owner may specify editorial, tactile, cinematic, utilitarian, spatia
 Give the agent the repository or the contents of `SKILL.md` and `templates/agent-handoff.template.md`, then provide a completed project brief. Say:
 
 > Use this repository as the art-direction and premium frontend workflow for this project. Follow the phases in order. Do not skip product diagnosis, reference analysis, the three-concept visual gate, or the two-surface proof. Do not treat a font/color change as art direction. Do not copy reference websites. Create one original visual world for this project, document it in `DESIGN.md`, prove it on one entry surface and one real workflow, then propagate it and perform independent visual, functional, responsive, and accessibility QA.
+
+### Recommended handoff layers
+
+For a quick project, provide `SKILL.md`, the universal handoff template, and a completed project brief. For a serious production or hackathon project, also provide the asset/icon brief, reference analysis, and the concept scorecard. For a constrained agent, provide the cross-agent adapter so missing browser, image, repository, or backend capabilities become explicit equivalent steps rather than silent omissions.
+
+Keep the project-specific files in the project repository. The reusable skill remains stable; the project’s `DESIGN.md`, selected concept, references, screenshots, and acceptance evidence belong to that project. This separation lets the same workflow support very different products without carrying LedgerLens-specific decisions into unrelated work.
 
 ## What this repository does not promise
 
