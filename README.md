@@ -5,10 +5,21 @@
 [![MIT License](https://img.shields.io/badge/license-MIT-0f766e.svg)](LICENSE)
 [![Agent agnostic](https://img.shields.io/badge/works%20with-any%20agentic%20AI-1f2937.svg)](docs/CROSS_AGENT_ADAPTER.md)
 [![Skill validated](https://img.shields.io/badge/Skill%20Creator-validated-7c3aed.svg)](SKILL.md)
+[![Live preview](https://img.shields.io/badge/live%20preview-open-0f766e.svg)](https://ist-established-takes-elliott.trycloudflare.com/concepts)
+
+<p align="center">
+  <a href="https://ist-established-takes-elliott.trycloudflare.com/concepts"><img src="docs/assets/concept-gate.webp" alt="LedgerLens visual concept review gate" width="31%" /></a>
+  <a href="https://ist-established-takes-elliott.trycloudflare.com/concept/a"><img src="docs/assets/cinematic-ledger-landing.webp" alt="Cinematic Ledger landing concept" width="31%" /></a>
+  <a href="https://ist-established-takes-elliott.trycloudflare.com/concept/a/case"><img src="docs/assets/cinematic-ledger-case.webp" alt="Cinematic Ledger case workspace concept" width="31%" /></a>
+</p>
+
+<p align="center"><sub>Example concept gate · entry surface · real workflow proof — <a href="https://ist-established-takes-elliott.trycloudflare.com/concepts">open the live preview</a></sub></p>
 
 Art Direction First is an open-source workflow for creating original, premium websites, dashboards, and product interfaces with **Antigravity, Claude Code, Gemini, Kiro, Cursor, Windsurf, OpenAI coding agents, or any other agentic AI**.
 
 It keeps the process reusable while allowing every project to choose its own product story, references, UI direction, visual world, typography, assets, icons, and motion language.
+
+New to the workflow? Read the [integration tutorial](docs/INTEGRATION_TUTORIAL.md) for copy-ready prompts and setup instructions for different AI coding agents.
 
 ---
 
@@ -202,6 +213,7 @@ Use this instruction:
 | [`docs/DESIRED_OUTCOME_VERIFICATION.md`](docs/DESIRED_OUTCOME_VERIFICATION.md) | Owner/reviewer confirmation gate |
 | [`docs/HACKATHON_QUICKSTART.md`](docs/HACKATHON_QUICKSTART.md) | Rapid 4–8 hour execution plan |
 | [`docs/HACKATHON_PRESENTATION_SCRIPT.md`](docs/HACKATHON_PRESENTATION_SCRIPT.md) | Script for teammates, mentors, or judges |
+| [`docs/INTEGRATION_TUTORIAL.md`](docs/INTEGRATION_TUTORIAL.md) | Detailed setup guide for any AI coding agent |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Contribution guidelines |
 | [`NOTICE.md`](NOTICE.md) | Scope and third-party reference notice |
 | [`LICENSE`](LICENSE) | MIT License |
