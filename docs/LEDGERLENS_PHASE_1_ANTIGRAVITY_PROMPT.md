@@ -44,6 +44,9 @@ Use these references only to understand quality principles. Do not copy their la
 - Ledger website reference: https://dribbble.com/shots/25075102-Ledger-Website-Design
   Study editorial composition, product-centered storytelling, and visual hierarchy. Do not copy the design.
 
+- OpenDesign: https://open-design.ai/
+  Study its portable DESIGN.md workflow, iterative preview loop, agent-agnostic handoff, and explicit design-system thinking. Do not copy its visual identity, templates, wording, or “vibe design” language.
+
 ## Selected LedgerLens direction
 
 Use the “Editorial Evidence System” direction and the working visual world “The Reconciliation Room.”
@@ -66,7 +69,7 @@ Do not use random gradients, heavy glassmorphism, unrelated 3D, terminal decorat
 
 Do not treat a library as the source of LedgerLens identity. Build the Reconciliation Line, evidence surfaces, typography, palette, and spacing first.
 
-Use the existing project UI primitives for accessible controls. Consider React Bits only for one small expressive moment, Aceternity UI or Skiper UI only as heavily adapted implementation references for an uncommon hero or section, Framer Motion/Motion for state and layout transitions, and Motion Primitives for small composable presence, disclosure, or sequential transitions. Vengeance UI may be considered for one restrained interaction only. Do not acquire or import all libraries by default.
+Use the existing project UI primitives for accessible controls. Consider React Bits only for one small expressive moment, Aceternity UI or Skiper UI only as heavily adapted implementation references for an uncommon hero or section, Framer Motion/Motion for state and layout transitions, Motion Primitives for small composable presence, disclosure, or sequential transitions, and OpenDesign only as an agent-agnostic workflow/reference system for preserving DESIGN.md, previews, and evidence. Vengeance UI may be considered for one restrained interaction only. Do not acquire or import all libraries by default.
 
 For every borrowed component, record: product reason, page fit, brand adaptation, keyboard and reduced-motion behavior, performance cost, license, and fallback. Reject any component that introduces neon gradients, generic glass cards, decorative motion, or a second visual language. The Reconciliation Line must be built or adapted as a LedgerLens-owned signature, not copied from a library.
 

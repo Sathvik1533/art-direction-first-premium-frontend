@@ -28,6 +28,14 @@ Source: https://dribbble.com/shots/25075102-Ledger-Website-Design
 
 The reference is useful for editorial composition, product-centered visual storytelling, typography, scale, and whitespace. It reinforces that a premium page can be quiet and precise rather than overloaded with effects. LedgerLens should translate those principles into an original evidence-room language.
 
+## OpenDesign
+
+Source: https://open-design.ai/  ·  Repository: https://github.com/nexu-io/open-design
+
+OpenDesign is useful as a workflow reference because it makes design systems, DESIGN.md files, portable artifacts, agent choice, iterative preview, and local ownership explicit. It reinforces that a visual direction should survive a change of coding agent and remain readable as project files.
+
+LedgerLens should adopt the portability principle: keep the visual system, wireframes, reference boundaries, screenshots, and acceptance evidence in the repository. It must not copy OpenDesign’s identity, templates, terminology, or visual style.
+
 ## Decision for LedgerLens
 
-Use an **Editorial Evidence System** with the visual world **The Reconciliation Room**. Make the product story about a captured payment, a missing or changed amount, an evidence trail, a clear rule, and a signed human decision. Use a Reconciliation Line as the project-owned visual metaphor. Keep technical proof available but subordinate to the human financial story.
+Use an **Editorial Evidence System** with the visual world **The Reconciliation Room**. Make the product story about a captured payment, a missing or changed amount, an evidence trail, a clear rule, and a signed human decision. Use a Reconciliation Line as the project-owned visual metaphor. Keep technical proof available but subordinate to the human financial story. Preserve the system as portable DESIGN.md and screenshot evidence so any agent can continue the work without restarting the art direction.

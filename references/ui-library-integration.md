@@ -14,6 +14,7 @@ Use component libraries as implementation resources, not as sources of identity.
 - **Aceternity UI** — use as a source of advanced React/Tailwind/Motion implementation patterns for one hero composition, background treatment, or carefully bounded interactive block. Its defaults often lean toward dramatic gradients and effects, so strip away anything that conflicts with the project’s material language. For LedgerLens, it may inform a restrained hero transition or evidence reveal, never a neon background or generic animated card wall.
 - **Framer Motion / Motion** — use as the low-level motion engine when state transitions, layout choreography, presence, or gesture behavior genuinely improve comprehension. Define the project’s easing, duration, reduced-motion fallback, and interaction rules first. For LedgerLens, use it for source-line drawing, evidence-slip arrival, accordion/panel transitions, and a quiet decision-receipt confirmation. Do not use it to animate every card.
 - **Motion Primitives** — use for small, composable motion primitives such as text, spotlight, scroll, accordion, or presence behavior when they reduce implementation time without imposing a second visual identity. Copy or adapt only the primitive that fits the locked system. For LedgerLens, use it for progressive disclosure and sequential methodology transitions, not for ornamental background effects.
+- **OpenDesign** — use as an optional agent-agnostic design workspace and DESIGN.md workflow reference. Its useful lesson is that visual direction, reusable systems, real artifacts, and iterative preview should be explicit and portable across agents. For LedgerLens, use it to preserve DESIGN.md, screenshot review, and handoff evidence across Antigravity, Claude, Gemini, Kiro, Cursor, or another agent. Do not import OpenDesign’s visual identity, templates, or “vibe design” language into the product.
 
 ## Acquisition map: what to use for what
 
@@ -25,6 +26,7 @@ Use component libraries as implementation resources, not as sources of identity.
 | Small expressive animation | React Bits | One restrained trace reveal | Repeated animated text everywhere |
 | State and layout animation | Framer Motion / Motion | Evidence panel, decision receipt, panel transitions | Decorative motion on every element |
 | Composable scroll/presence primitive | Motion Primitives | Methodology stage reveal, progressive disclosure | A second visual language |
+| Portable design-system workflow | OpenDesign | Keep DESIGN.md, references, previews, and evidence portable | Treating an agent workspace as the product’s brand |
 | Advanced hover or pointer moment | Vengeance UI or React Bits | A subtle source-line inspection cue | Essential navigation or keyboard-only actions |
 | Uncommon landing block | Skiper UI | Adapted section structure | Full template import |
 | Heavy cinematic / background effects | None by default | Only if it clarifies the trace | Neon, noise, or 3D for its own sake |
