@@ -12,24 +12,60 @@ It keeps the process reusable while allowing every project to choose its own pro
 
 ---
 
-## The idea in one picture
+## The workflow at a glance
+
+This is intentionally vertical so it remains readable on GitHub, mobile screens, and zoomed views.
 
 ```mermaid
-flowchart LR
-    A[Product truth] --> B[Emotional premise]
-    B --> C[Original visual world]
-    C --> D[Three visual concepts]
-    D --> E{Screenshot review}
-    E -->|Reject generic| D
-    E -->|Select one| F[Project DESIGN.md]
-    F --> G[Landing or entry proof]
-    G --> H[Real workflow proof]
-    H --> I{Owner outcome check}
+flowchart TD
+    A[01 · UNDERSTAND<br/>Product truth + user + workflow] --> B[02 · DEFINE<br/>Emotional premise + point of view]
+    B --> C[03 · DIRECT<br/>Original visual world + UI direction]
+    C --> D[04 · EXPLORE<br/>Three distinct visual concepts]
+    D --> E{05 · REVIEW<br/>Does it feel original?}
+    E -->|No · reject generic| D
+    E -->|Yes · select one| F[06 · LOCK<br/>Project-specific DESIGN.md]
+    F --> G[07 · PROVE<br/>Landing or entry surface]
+    G --> H[08 · PROVE<br/>One real product workflow]
+    H --> I{09 · OWNER CHECK<br/>Did we achieve the intended UI/UX?}
     I -->|Changes requested| F
-    I -->|Aligned| J[Propagate across routes]
-    J --> K[Functional + responsive + accessibility QA]
-    K --> L[Verified handoff]
+    I -->|Aligned| J[10 · PROPAGATE<br/>Build the remaining routes]
+    J --> K[11 · VERIFY<br/>Functional + responsive + accessibility QA]
+    K --> L[12 · HAND OFF<br/>Verified, honest, reusable result]
+
+    classDef understand fill:#e0f2fe,stroke:#0284c7,color:#082f49,stroke-width:2px
+    classDef define fill:#fef3c7,stroke:#d97706,color:#451a03,stroke-width:2px
+    classDef direct fill:#ede9fe,stroke:#7c3aed,color:#2e1065,stroke-width:2px
+    classDef explore fill:#fce7f3,stroke:#db2777,color:#500724,stroke-width:2px
+    classDef review fill:#fff7ed,stroke:#ea580c,color:#431407,stroke-width:2px
+    classDef prove fill:#dcfce7,stroke:#16a34a,color:#052e16,stroke-width:2px
+    classDef verify fill:#ccfbf1,stroke:#0f766e,color:#042f2e,stroke-width:2px
+    classDef handoff fill:#f3f4f6,stroke:#374151,color:#111827,stroke-width:2px
+
+    class A understand
+    class B define
+    class C direct
+    class D explore
+    class E review
+    class F direct
+    class G,H prove
+    class I review
+    class J direct
+    class K verify
+    class L handoff
 ```
+
+### What the colors mean
+
+| Color | Stage | Meaning |
+|---|---|---|
+| Blue | Understand | Start with product truth |
+| Amber | Define | Decide what the product should feel like |
+| Violet | Direct | Create the visual world and system |
+| Pink | Explore | Generate genuinely different concepts |
+| Orange | Review | Reject generic or weak directions |
+| Green | Prove | Test the entry surface and real workflow |
+| Teal | Verify | Check quality, behavior, and accessibility |
+| Gray | Hand off | Return evidence and honest status |
 
 > **The fastest way to a better frontend is to catch the wrong visual direction before building the entire product.**
 
