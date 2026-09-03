@@ -1,116 +1,254 @@
-# Art Direction First — Premium Frontend System
+# Art Direction First
 
-A reusable, agent-agnostic workflow for creating original, premium websites and product interfaces without falling into generic AI-generated frontend patterns.
+## Build a frontend that feels like a real product—not an AI template.
+
+Art Direction First is a free, open-source workflow for building polished websites, dashboards, and product interfaces with any agentic AI.
+
+Use it with **Antigravity, Claude Code, Gemini, Kiro, Cursor, Windsurf, OpenAI coding agents, or any other AI builder**.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-This repository can be handed to Antigravity, Claude Code, Gemini, Cursor, or another AI builder alongside a project brief, reference links, and the existing project constraints. It does not force every project to share one visual style. It makes the **art-direction process** reusable while keeping each project’s visual identity original.
+## The simple idea
 
-## Why this exists
+Do not ask an AI agent to build the whole frontend immediately.
 
-AI frontend agents often jump from a feature list directly to familiar cards, pills, gradients, dashboards, and default typography. The result may work technically but feel generic, visually disconnected, or obviously AI-generated.
+First help it understand the product. Then make it choose a visual direction. Then test that direction on a small part of the product. Only after the direction feels right should it build the rest.
 
-This system changes the order of operations. It starts with product truth, emotional premise, and brand point of view. It treats reference websites as principles rather than templates. It requires multiple visual concepts, screenshot-based rejection of generic output, a project-specific design system, a two-surface proof, and independent visual and functional QA before full propagation.
+```text
+Understand the product
+        ↓
+Choose the visual world
+        ↓
+Compare three concepts
+        ↓
+Prove one landing page + one real workflow
+        ↓
+Review screenshots
+        ↓
+Build the remaining pages
+        ↓
+Test everything honestly
+```
 
-## Origin and mission
+## Start here
 
-This system came from a practical problem: a working product can lose its momentum when the frontend repeatedly comes back looking like a generic AI-generated website. The cost is not only visual frustration. It creates rework, weakens confidence in the product, makes the owner question the project, and makes every new hackathon start from the same painful reset.
+### Step 1 — Give the agent the skill
 
-Art Direction First is a personal solution turned into a reusable public method. It reduces that stress for other builders by moving the difficult design decisions earlier, making them visible, and testing them before a full frontend is built. The system does not promise that every result will be beautiful. It gives people and agents a disciplined way to discover the right visual world faster, reject the wrong one earlier, preserve the real workflow, and carry the decision into the rest of the product.
+Give the agent [`SKILL.md`](SKILL.md). This is the rulebook.
 
-## The workflow
+Also give it [`templates/agent-handoff.template.md`](templates/agent-handoff.template.md), which explains exactly how to use the process in any AI environment.
 
-1. Give the agent `SKILL.md` and `templates/agent-handoff.template.md`.
-2. Fill `templates/project-brief.template.md` with product truth, users, workflow, constraints, references, UI direction, assets, icons, fonts, and quality bar.
-3. Analyze three to seven references using `references/reference-analysis.md`.
-4. Define a project-specific emotional premise, visual world, distinct voice, signature metaphor, material language, and anti-pattern list.
-5. Produce three materially different, screenshot-ready visual concepts at desktop and mobile widths.
-6. Reject generic concepts and select one direction.
-7. Create the project-specific `DESIGN.md` using `templates/design-system.template.md`.
-8. Build one landing or entry surface and one real product workflow as a two-surface proof.
-9. Review screenshots and revise before full propagation.
-10. Apply the locked system to the remaining routes by page responsibility.
-11. Run `references/qa-checklist.md` and return evidence, limitations, screenshots, and a stable preview URL.
+### Step 2 — Fill in the project brief
 
-For a time-boxed hackathon, use [`docs/HACKATHON_QUICKSTART.md`](docs/HACKATHON_QUICKSTART.md). It compresses the process into diagnosis, a focused concept gate, two-surface proof, propagation, and evidence-based QA without removing the quality gates.
+Copy [`templates/project-brief.template.md`](templates/project-brief.template.md) and answer the questions:
 
-## Three mandatory protections
+- What are you building?
+- Who is it for?
+- What problem does it solve?
+- What is the most important user workflow?
+- What should the product feel like?
+- What should it never feel like?
+- What must stay functional?
+- What references, fonts, icons, assets, and UI direction do you prefer?
 
-### Avoid the AI slope
+You do not need to know design vocabulary. Plain language is enough.
 
-The agent must define a visual world, emotional premise, signature metaphor, typography, spacing, materials, voice, and anti-patterns before full implementation. A font or color change is not art direction. The result must be recognizable without the logo and must not default to generic SaaS patterns.
+### Step 3 — Add references carefully
 
-### Use references as principles
+Give the agent three to seven websites, screenshots, or products that inspire you.
 
-The project owner provides three to seven references. The agent records what to borrow, where it applies, and what not to copy. References are not templates. The result must not become a collage of copied layouts, colors, wording, illustrations, or animations.
+For every reference, write:
 
-### Let the project choose its UI language
+| Tell the agent | Example |
+|---|---|
+| Study this | Editorial spacing, product visualization, calm financial trust |
+| Do not copy this | Exact layout, colors, wording, illustrations, or branded metaphor |
 
-The project owner may specify editorial, tactile, cinematic, utilitarian, spatial, neo-brutalist, soft, glass, or another direction. The agent must justify the choice against the product’s trust, readability, audience, and workflow. Morphism is never a default effect.
+Use [`references/reference-analysis.md`](references/reference-analysis.md) to keep references from becoming a copy-paste collage.
+
+### Step 4 — Choose the UI direction
+
+Tell the agent what kind of interface you want, or ask it to recommend one:
+
+- Editorial.
+- Tactile.
+- Cinematic.
+- Utilitarian.
+- Spatial.
+- Neo-brutalist.
+- Soft.
+- Dark.
+- Light.
+- Another direction that fits the product.
+
+The agent must explain why the direction fits the users and the product. Glassmorphism, neumorphism, and heavy animation are not automatically premium.
+
+### Step 5 — Compare three concepts
+
+Before building every page, require three genuinely different visual concepts.
+
+Each concept must show:
+
+- The landing or entry surface.
+- One real product workflow.
+- Desktop and mobile versions.
+- Typography.
+- Palette.
+- Materials.
+- Signature visual metaphor.
+- Interaction direction.
+
+Use [`docs/VISUAL_CONCEPT_SCORECARD.md`](docs/VISUAL_CONCEPT_SCORECARD.md) to compare them. Reject anything that is only a font change, color change, card change, or copy of a reference website.
+
+### Step 6 — Prove the direction
+
+Build two things first:
+
+1. The landing or entry surface.
+2. One complete real workflow.
+
+This is the most important time-saving step. If these two surfaces feel like different products, fix the direction now—not after building twelve pages.
+
+### Step 7 — Lock the design system
+
+After choosing a concept, create the project’s `DESIGN.md` using [`templates/design-system.template.md`](templates/design-system.template.md).
+
+This records the project-specific:
+
+- Visual world.
+- Emotional premise.
+- Voice.
+- Typography.
+- Palette.
+- Spacing.
+- Materials.
+- Icons.
+- Motion.
+- Signature metaphor.
+- Page expressions.
+- Anti-patterns.
+
+### Step 8 — Build the rest
+
+Apply the locked system to the remaining pages. Keep one visual identity, but let each page behave according to its job:
+
+| Page | What it should prioritize |
+|---|---|
+| Landing | Story and memorable first impression |
+| Dashboard | Summary and orientation |
+| Queue | Fast scanning and prioritization |
+| Case/workspace | Evidence and decisions |
+| Forms/ingestion | Clear steps and useful feedback |
+| Audit/history | Trust and chronology |
+| Settings | Precision and control |
+| Documentation | Reading and finding information |
+
+Do not turn every route into the same card grid.
+
+### Step 9 — Test the result
+
+Use [`references/qa-checklist.md`](references/qa-checklist.md). Check:
+
+- Desktop.
+- Tablet.
+- 375px mobile.
+- 320px mobile.
+- Keyboard navigation.
+- Focus states.
+- Contrast.
+- Reduced motion.
+- Loading states.
+- Empty states.
+- Error states.
+- Success states.
+- Real workflow success and failure paths.
+- Direct route loading.
+- Persistence where claimed.
+
+Use [`docs/DESIRED_OUTCOME_VERIFICATION.md`](docs/DESIRED_OUTCOME_VERIFICATION.md) to ask the owner or reviewer whether the result actually feels like the intended product.
+
+If something was not tested, write **unverified**. Never claim PASS because the code compiles.
+
+## Hackathon mode
+
+For a 4–8 hour hackathon, use [`docs/HACKATHON_QUICKSTART.md`](docs/HACKATHON_QUICKSTART.md).
+
+The short version is:
+
+| Time | Focus |
+|---:|---|
+| 15 min | Product truth and constraints |
+| 20 min | Visual direction and concept decision |
+| 60–90 min | Landing page and one real workflow |
+| 90–180 min | Remaining high-value routes |
+| 30–45 min | Screenshot, responsive, accessibility, and function checks |
+
+Do not remove the concept gate to save time. Time-box it instead.
+
+## What this prevents
+
+This workflow exists because AI agents often produce interfaces that are technically complete but visually generic. It protects against:
+
+- Default SaaS dashboards.
+- Repeated rounded cards.
+- Excessive pills.
+- Neon gradients.
+- Random glass panels.
+- Unnecessary monospace text.
+- Decorative terminal language.
+- Unrelated 3D objects.
+- Generic stock imagery.
+- Fake testimonials.
+- Unsupported metrics.
+- Technical copy before the user story.
+- Beautiful landing pages disconnected from the real product.
 
 ## UI libraries and animation
 
-`references/ui-library-integration.md` explains how to evaluate animated and component libraries such as AnimasterLib/Animmaster-style collections, Skiper UI, and Vengeance UI. Use them only after the project art direction is locked. Select the smallest number of accessible and performant components that reinforce the project’s identity. Never import a full template or let a library’s default styles define the brand.
+You may inspect libraries such as Animaster-style animated collections, Skiper UI, and Vengeance UI. Use [`references/ui-library-integration.md`](references/ui-library-integration.md).
 
-## Repository map
+Use a library only when a component has a product reason, fits the visual system, is accessible, performs well, and has a valid license. Libraries are ingredients. They are not the brand.
 
-| Path | Purpose |
+## How to hand a report to an AI agent
+
+Give the agent:
+
+1. The report file.
+2. The project brief.
+3. `SKILL.md`.
+4. The universal handoff template.
+5. A clear instruction describing whether the report is diagnostic, visual, functional, or acceptance evidence.
+
+Use this wording:
+
+> Read this report as a binding input for the next frontend pass. Summarize the findings first. Separate required changes from optional suggestions. Preserve the existing product behavior and data contracts. Do not modify every route until the revised landing surface and one real workflow are shown in desktop and mobile screenshots. Return verified and unverified checks separately.
+
+## Files
+
+| File | Use it for |
 |---|---|
-| `SKILL.md` | Core agent instructions and mandatory workflow |
-| `templates/agent-handoff.template.md` | Universal handoff for any agentic AI tool |
-| `templates/asset-and-icon-brief.template.md` | Project-specific assets, icons, fonts, and motion brief |
-| `templates/project-brief.template.md` | Project-specific inputs supplied by the user or team |
-| `templates/design-system.template.md` | Project-specific system created after concept selection |
-| `references/reference-analysis.md` | Reference research and anti-copy method |
-| `references/ui-library-integration.md` | Safe use of animation/component libraries |
-| `references/qa-checklist.md` | Visual, functional, responsive, and accessibility QA |
-| `docs/CROSS_AGENT_ADAPTER.md` | Equivalent steps when an agent lacks a specific tool |
-| `docs/VISUAL_CONCEPT_SCORECARD.md` | Evidence-based concept comparison and rejection rubric |
-| `docs/HACKATHON_QUICKSTART.md` | Time-boxed execution plan for a 4–8 hour sprint |
-| `docs/HACKATHON_PRESENTATION_SCRIPT.md` | Script for explaining the system to a team or judges |
-| `docs/LEDGERLENS_LANDING_REVIEW.md` | Example of a project-specific directional review |
-| `docs/DESIRED_OUTCOME_VERIFICATION.md` | Owner/reviewer gate for confirming the intended frontend was achieved |
-| `docs/MANUS_CONTINUITY_HANDOFF.md` | Essential state for transferring work to another Manus account |
-| `CONTRIBUTING.md` | Contribution and maintenance guidelines |
-| `NOTICE.md` | Scope, responsibility, and third-party reference notice |
-| `LICENSE` | MIT License |
+| [`SKILL.md`](SKILL.md) | Core workflow and quality gates |
+| [`templates/agent-handoff.template.md`](templates/agent-handoff.template.md) | Handoff to any AI agent |
+| [`templates/project-brief.template.md`](templates/project-brief.template.md) | Project truth and constraints |
+| [`templates/asset-and-icon-brief.template.md`](templates/asset-and-icon-brief.template.md) | Assets, fonts, icons, images, and motion |
+| [`templates/design-system.template.md`](templates/design-system.template.md) | Project-specific `DESIGN.md` |
+| [`references/reference-analysis.md`](references/reference-analysis.md) | Reference research without copying |
+| [`references/ui-library-integration.md`](references/ui-library-integration.md) | Safe library and animation use |
+| [`references/qa-checklist.md`](references/qa-checklist.md) | QA evidence |
+| [`docs/CROSS_AGENT_ADAPTER.md`](docs/CROSS_AGENT_ADAPTER.md) | What to do when an agent lacks a tool |
+| [`docs/VISUAL_CONCEPT_SCORECARD.md`](docs/VISUAL_CONCEPT_SCORECARD.md) | Choosing between concepts |
+| [`docs/HACKATHON_QUICKSTART.md`](docs/HACKATHON_QUICKSTART.md) | Rapid sprint workflow |
+| [`docs/HACKATHON_PRESENTATION_SCRIPT.md`](docs/HACKATHON_PRESENTATION_SCRIPT.md) | Explaining the system to others |
+| [`docs/DESIRED_OUTCOME_VERIFICATION.md`](docs/DESIRED_OUTCOME_VERIFICATION.md) | Confirming the owner got the intended UI/UX |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | Contributing to the open-source project |
+| [`LICENSE`](LICENSE) | MIT License |
 
-## How to use it with an AI agent
+## Why this project exists
 
-Give the agent the repository or the contents of `SKILL.md` and `templates/agent-handoff.template.md`, then provide a completed project brief. Say:
+This started as a practical response to a frustrating pattern: a working product could lose its momentum when an AI-generated frontend looked generic, disconnected, or unlike the product the owner imagined.
 
-> Use this repository as the art-direction and premium frontend workflow for this project. Follow the phases in order. Do not skip product diagnosis, reference analysis, the three-concept visual gate, or the two-surface proof. Do not treat a font/color change as art direction. Do not copy reference websites. Create one original visual world for this project, document it in `DESIGN.md`, prove it on one entry surface and one real workflow, then propagate it and perform independent visual, functional, responsive, and accessibility QA.
+Art Direction First turns that personal solution into a reusable open-source workflow. It helps people make the difficult visual decisions earlier, test them sooner, reduce rework, and hand the same process to different AI agents without losing the product’s identity.
 
-### Recommended handoff layers
+## License
 
-For a quick project, provide `SKILL.md`, the universal handoff template, and a completed project brief. For a serious production or hackathon project, also provide the asset/icon brief, reference analysis, and the concept scorecard. For a constrained agent, provide the cross-agent adapter so missing browser, image, repository, or backend capabilities become explicit equivalent steps rather than silent omissions.
-
-Keep the project-specific files in the project repository. The reusable skill remains stable; the project’s `DESIGN.md`, selected concept, references, screenshots, and acceptance evidence belong to that project. This separation lets the same workflow support very different products without carrying LedgerLens-specific decisions into unrelated work.
-
-### How to pass a review report to an AI agent
-
-Give the agent the repository, the relevant report, and the universal handoff template. Then state the report’s authority and the expected action explicitly. For example: “Read `docs/LEDGERLENS_LANDING_REVIEW.md` as a directional product and UX review. Treat its findings as constraints for the next landing-page pass. Do not touch production code until you have summarized the issues, proposed the revised story and palette, and identified the screenshots required for comparison.”
-
-For a general project, pass a report using this structure: identify the report path, say whether it is diagnostic, visual, functional, or acceptance evidence, list which findings are binding, specify what the agent may change, require it to preserve backend and data behavior, and require it to return screenshots plus verified and unverified checks. The report is an input to the workflow; it does not replace the project brief or the visual concept gate.
-
-### How to verify the user got the desired frontend
-
-Do not let the implementing agent approve itself. Show the project owner or designated reviewer the three concepts, selected direction, final entry surface, real workflow, desktop/mobile screenshots, and important states. Ask whether the result feels like the intended product, whether the story arrives before technical language, whether the palette and UI direction are right, whether the landing and product feel like one world, and what still feels generic or wrong. Record the answer using [`docs/DESIRED_OUTCOME_VERIFICATION.md`](docs/DESIRED_OUTCOME_VERIFICATION.md). If the owner has not reviewed it, use `UNVERIFIED — awaiting review`, not PASS.
-
-### Manus account continuity
-
-If the account reaches a limit, transfer [`docs/MANUS_CONTINUITY_HANDOFF.md`](docs/MANUS_CONTINUITY_HANDOFF.md) as the durable context. It contains only the essential current state, decisions, links, blockers, next actions, and source-of-truth documents. Do not mix in old duplicated prompts or obsolete review archives.
-
-## What this repository does not promise
-
-This repository is a process, not a guarantee of visual quality or production readiness. Project owners and implementing agents remain responsible for validating product claims, accessibility, performance, security, backend behavior, data integrity, deployment, and third-party licenses.
-
-## Open-source status
-
-This repository is released under the **MIT License**. You may use, copy, modify, merge, publish, distribute, sublicense, and sell copies of the materials, subject to the terms in `LICENSE`.
-
-The MIT License applies to this repository’s original documentation, templates, and workflow. Reference websites, external assets, fonts, icons, and third-party UI libraries mentioned in the documentation remain subject to their own licenses and terms.
-
-## Contributing
-
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) for contribution guidance. Improvements should make the process more useful, more agent-agnostic, more accessible, more honest, or more resistant to generic AI output.
+This project is released under the [MIT License](LICENSE). The license covers this repository’s original workflow, documentation, and templates. External websites, assets, fonts, icons, and UI libraries mentioned here remain subject to their own terms.
