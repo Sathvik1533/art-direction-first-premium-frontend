@@ -21,6 +21,8 @@ It keeps the process reusable while allowing every project to choose its own pro
 
 New to the workflow? Read the [integration tutorial](docs/INTEGRATION_TUTORIAL.md) for copy-ready prompts and setup instructions for different AI coding agents.
 
+Want to see the workflow applied to a real product? The [`examples/ledgerlens/`](examples/ledgerlens/) folder contains a complete project-specific visual direction, wireframes, and reference principles for LedgerLens. The [`LedgerLens Phase 1 prompt`](docs/LEDGERLENS_PHASE_1_ANTIGRAVITY_PROMPT.md) is ready to paste into Antigravity or adapt for any other coding agent.
+
 ---
 
 ## The workflow at a glance
@@ -215,6 +217,10 @@ Use this instruction:
 | [`docs/HACKATHON_QUICKSTART.md`](docs/HACKATHON_QUICKSTART.md) | Rapid 4–8 hour execution plan |
 | [`docs/HACKATHON_PRESENTATION_SCRIPT.md`](docs/HACKATHON_PRESENTATION_SCRIPT.md) | Script for teammates, mentors, or judges |
 | [`docs/INTEGRATION_TUTORIAL.md`](docs/INTEGRATION_TUTORIAL.md) | Detailed setup guide for any AI coding agent |
+| [`examples/ledgerlens/DESIGN.md`](examples/ledgerlens/DESIGN.md) | Complete LedgerLens visual-world specification |
+| [`examples/ledgerlens/WIREFRAMES.md`](examples/ledgerlens/WIREFRAMES.md) | Landing and case-workspace structural wireframes |
+| [`examples/ledgerlens/REFERENCE_PRINCIPLES.md`](examples/ledgerlens/REFERENCE_PRINCIPLES.md) | Apptains, Dribbble, Awwwards, and Ledger principles |
+| [`docs/LEDGERLENS_PHASE_1_ANTIGRAVITY_PROMPT.md`](docs/LEDGERLENS_PHASE_1_ANTIGRAVITY_PROMPT.md) | Exact Phase 1 implementation prompt |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Contribution guidelines |
 | [`NOTICE.md`](NOTICE.md) | Scope and third-party reference notice |
 | [`LICENSE`](LICENSE) | MIT License |
