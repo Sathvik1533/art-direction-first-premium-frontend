@@ -14,7 +14,7 @@ The skill was validated with Skill Creator’s validator. The repository is publ
 https://github.com/Sathvik1533/art-direction-first-premium-frontend
 
 Default branch: `main`
-Latest known commit: `626a00b Optimize workflow for hackathons and add presentation guidance` before the continuity additions in this handoff.
+Latest known commit: `025317e Add outcome verification and Manus continuity handoff`.
 
 ## Repository purpose
 
@@ -39,6 +39,10 @@ Product truth → diagnosis → reference analysis → emotional premise → vis
 - `docs/HACKATHON_QUICKSTART.md` — 4–8 hour sprint mode.
 - `docs/HACKATHON_PRESENTATION_SCRIPT.md` — explanation for teammates, mentors, or judges.
 - `docs/DESIRED_OUTCOME_VERIFICATION.md` — owner/reviewer confirmation gate.
+- `docs/HACKATHON_QUICKSTART.md` — time-boxed execution plan for a 4–8 hour sprint.
+- `docs/HACKATHON_PRESENTATION_SCRIPT.md` — explanation for teammates, mentors, or judges.
+
+The repository also contains the cross-agent adapter, visual concept scorecard, asset/icon brief, UI-library policy, contribution guide, notice, and MIT license.
 
 ## LedgerLens status
 
